@@ -1,5 +1,6 @@
 module.exports = {
   index:index
+  home:home
 }
 
 function index (req, res) {
@@ -7,5 +8,5 @@ function index (req, res) {
 }
 
 function home (req, res) {
-  res.send ('<h1> home page <h1>')
+  res.sendFile(__dirname + '/index.html')
 }

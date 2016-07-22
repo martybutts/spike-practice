@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
   res.send('<h1>hello martin and mandy</h1>')
 })
 
-app.get('/', routes.index)
+app.get('/home', routes.home)
 
 app.listen(PORT, function () {
   console.log('The server is listening on port', PORT)
